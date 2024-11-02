@@ -18,7 +18,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.System.Acts.GoToLayout,
-		C3.Plugins.Button.Cnds.OnClicked
+		C3.Plugins.Button.Cnds.OnClicked,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.System.Acts.ResetGlobals
 	];
 };
 self.C3_JsPropNameTable = [
@@ -38,6 +40,7 @@ self.C3_JsPropNameTable = [
 	{Button: 0},
 	{Button2: 0},
 	{Text4: 0},
+	{Text5: 0},
 	{monedas: 0},
 	{vidas: 0}
 ];
@@ -56,5 +59,6 @@ self.InstanceType = {
 	HTMLElement: class extends self.IHTMLElementInstance {},
 	Button: class extends self.IButtonInstance {},
 	Button2: class extends self.IButtonInstance {},
-	Text4: class extends self.ITextInstance {}
+	Text4: class extends self.ITextInstance {},
+	Text5: class extends self.ITextInstance {}
 }

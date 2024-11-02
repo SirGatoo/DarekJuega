@@ -4662,7 +4662,8 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => and("Vidas: ", v0.GetValue());
 		},
-		() => 0
+		() => 0,
+		() => 3
 ];
 
 
